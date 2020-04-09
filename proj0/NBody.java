@@ -1,10 +1,10 @@
 public class NBody {
 	public static void main(String[] args){
-		double T = Double.parseDouble(args[0]);
-		double dt = Double.parseDouble(args[1]);
-		String filename = args[2];
-		double radius = readRadius(filename);
-		Planet[] planetsArray = readPlanets(filename);
+		private double T = Double.parseDouble(args[0]);
+		private double dt = Double.parseDouble(args[1]);
+		private String filename = args[2];
+		private double radius = readRadius(filename);
+		private Planet[] planetsArray = readPlanets(filename);
 
 		StdDraw.setScale(-radius, radius);
 		// StdDraw.picture( 0, 0, "images/starfield.jpg", 2 * radius, 2 * radius);
