@@ -21,7 +21,7 @@ public class NBody {
 				yForcesArray[i] = planetsArray[i].calcNetForceExertedByY(planetsArray);
 			}
 			for(int i = 0; i < planetsArray.length; i++) {
-				planetsArray[i].update(counter, xForcesArray[i], yForcesArray[i]);
+				planetsArray[i].update(dt, xForcesArray[i], yForcesArray[i]);
 			}
 			StdDraw.picture( 0, 0, "images/starfield.jpg", 2 * radius, 2 * radius);
 			for(Planet planet : planetsArray){
