@@ -11,7 +11,7 @@ public class NBody {
 		// for(Planet planet : planetsArray){
 			// planet.draw();
 		// }
-		int counter = 0;
+		double counter = 0.0;
 		
 		while(counter < T){
 			Double[] xForcesArray = new Double[planetsArray.length];

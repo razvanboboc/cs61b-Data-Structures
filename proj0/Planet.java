@@ -6,8 +6,8 @@ public class Planet {
 	public double yyVel;
 	public double mass;
 	public String imgFileName;
-	public static final double gravitationalConstant = 6.67 * Math.pow(10,-11);
-	public Planet[] planetsArray;
+	private static final double gravitationalConstant = 6.67 * Math.pow(10,-11);
+	private Planet[] planetsArray;
 
 
 	public Planet(double xPos, double yPos, double xVel, double yVel, double m, String img){
