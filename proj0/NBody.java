@@ -15,9 +15,8 @@ public class NBody {
 		StdDraw.setScale(-radius, radius);
 		// time variable
 		double counter = 0.0;
-		/**
-            In this main loop, updating and rendering each Planet's movements with increasing time variable: counter
-         */
+		/** In this main loop, updating and rendering each Planet's movements with increasing time variable: counter */
+
 		while(counter < T){
 			/** Declaring net forces arrays */			
 			Double[] xForcesArray = new Double[planetsArray.length];
@@ -52,9 +51,9 @@ public class NBody {
 		}
 
 		
-		/**
-            Outputs the final states of each Planet for autograder to work correctly
-         */
+		
+        /** Outputs the final states of each Planet for autograder to work correctly */
+      
 		StdOut.printf("%d\n", planetsArray.length);
 		StdOut.printf("%.2e\n", radius);
 		for (int i = 0; i < planetsArray.length; i++) {
@@ -64,17 +63,14 @@ public class NBody {
 		}
 
 	}
-	/**
-        Returns a double corresponding to the radius of the universe in given file
-    */
+	/** Returns a double corresponding to the radius of the universe in given file */
+    
 	public static double readRadius(String filePath){
 		In in = new In(filePath);
 		in.readInt();
 		return in.readDouble();
 	}
-	/**
-        Returns an array of Planets corresponding to the planets defined in given file
-     */
+	/** Returns an array of Planets corresponding to the planets defined in given file */
 	public static Planet[] readPlanets(String filePath){
 		
 		In in = new In(filePath);
