@@ -18,7 +18,7 @@ public class Planet {
         @param yV: current velocity in the y direction
         @param m: mass
         @param img: path to an image file that depicts the planet
-    */
+    	*/
 	public Planet(double xPos, double yPos, double xVel, double yVel, double m, String img){
 		xxPos = xPos;
 		yyPos = yPos;
